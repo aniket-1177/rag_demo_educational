@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-groq
+sentence-transformers
+chromadb
+pypdf  # For PDF loading
+nltk
+scikit-learn
+torch  # For models
