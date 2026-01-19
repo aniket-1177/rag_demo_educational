@@ -1,2 +1,5 @@
 .env 
 /.venv
+__pycache__
+chroma_db
+/data/attention_is_all_you_need.pdf

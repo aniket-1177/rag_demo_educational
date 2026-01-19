@@ -6,7 +6,7 @@ load_dotenv()
 
 # LLM settings (5.2: Token limitations - Groq models have context limits, e.g., 8k tokens)
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")  # Set this!
-LLM_MODEL = "llama3-8b-8192"  # Groq model with ~8k token limit
+LLM_MODEL = os.getenv("LLM_MODEL")  # Groq model with ~8k token limit
 
 # Embedding model (5.3: Vector embeddings)
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # HuggingFace sentence-transformers

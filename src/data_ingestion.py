@@ -1,5 +1,10 @@
-from langchain.document_loaders import DirectoryLoader, TextLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from langchain.document_loaders import DirectoryLoader, TextLoader, PyPDFLoader
+from langchain_community.document_loaders import (
+    DirectoryLoader,
+    TextLoader,
+    PyPDFLoader
+)
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 def load_documents(directory: str):
     """Load documents from a directory (supports txt and pdf)."""
